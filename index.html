@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Klinik | Stibajra</title>
+
+    <!-- Box Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!-- Tailwind Cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <!-- desktop navigation -->
+      <nav class="nav-dekstop container mx-auto w-3/4">
+        <!-- left Menu -->
+        <div class="nav-menu left">
+          <ul class="nav__list">
+            <li>
+              <a href="index.html" class="nav__link link">
+                <i class="bx bxs-home"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="about.html" class="nav__link link">
+                <i class="bx bx-info-circle"></i>
+                <span>About</span>
+              </a>
+            </li>
+            <li class="dropdown__item">
+              <div class="nav__link">
+                How To Helps
+                <i class="bx bx-chevron-down dropdown__arrow"></i>
+              </div>
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="donate.html" class="dropdown__link">
+                    <i class="bx bx-donate-heart"></i>Donate
+                  </a>
+                </li>
+                <li>
+                  <a href="fundraise.html" class="dropdown__link">
+                    <i class="bx bx-line-chart"></i>Fundraise
+                  </a>
+                </li>
+                <li>
+                  <a href="volunteer.html" class="dropdown__link">
+                    <i class="bx bx-user-plus"></i>Volunteer
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- center Logo -->
+        <div class="nav__data">
+          <a href="index.html" class="nav__logo">
+            <img
+              src="assets/img/LOGO.png"
+              alt="Logo"
+              class="logo w-[100px] h-[100px]"
+            />
+          </a>
+        </div>
+
+        <!-- right Menu -->
+        <div class="nav-menu right">
+          <ul class="nav__list">
+            <li>
+              <a href="blogs.html" class="nav__link link">
+                <i class="bx bx-news"></i>
+                <span>Blogs</span>
+              </a>
+            </li>
+            <li>
+              <a href="signin.html" class="nav__link link">
+                <i class="bx bx-log-in"></i>
+                <span>Sign In</span>
+              </a>
+            </li>
+            <div>
+              <a href="donate.html" class="nav__linkk">
+                <span class="btv">Be Their Voice</span>
+              </a>
+            </div>
+          </ul>
+        </div>
+      </nav>
+      <!-- end dekstop navigation -->
+
+      <!-- mobile Navigation -->
+      <nav class="nav-mobile container">
+        <div class="nav__data">
+          <a href="index.html" class="nav__logo">
+            <img
+              src="./assets/img/LOGO.png"
+              alt="Logo"
+              class="logo w-[90px] h-[90px] py-2"
+            />
+          </a>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="bx bx-menu nav__burger"></i>
+            <i class="bx bx-x nav__close"></i>
+          </div>
+        </div>
+
+        <div class="nav__menu mt-8" id="nav-menu">
+          <ul class="nav__list">
+            <li>
+              <a href="index.html" class="nav__link link">
+                <i class="bx bxs-home"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="about.html" class="nav__link link">
+                <i class="bx bx-info-circle"></i>
+                <span>About</span>
+              </a>
+            </li>
+            <li class="dropdown__item">
+              <div class="nav__link">
+                How To Helps
+                <i class="bx bx-chevron-down dropdown__arrow"></i>
+              </div>
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="donate.html" class="dropdown__link">
+                    <i class="bx bx-donate-heart"></i>Donate
+                  </a>
+                </li>
+                <li>
+                  <a href="fundraise.html" class="dropdown__link">
+                    <i class="bx bx-line-chart"></i>Fundraise
+                  </a>
+                </li>
+                <li>
+                  <a href="volunteer.html" class="dropdown__link">
+                    <i class="bx bx-user-plus"></i>Volunteer
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="blogs.html" class="nav__link link">
+                <i class="bx bx-news"></i>
+                <span>Blogs</span>
+              </a>
+            </li>
+            <li>
+              <a href="signin.html" class="nav__link link">
+                <i class="bx bx-log-in"></i>
+                <span>Sign In</span>
+              </a>
+            </li>
+            <div>
+              <a href="donate.html" class="nav__linkk">
+                <span class="btv">Be Their Voice</span>
+              </a>
+            </div>
+          </ul>
+        </div>
+      </nav>
+      <!-- end mobile navigation -->
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <!-- Video Background -->
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/Nzi3MF5Yn4k?autoplay=1&mute=1&loop=1&playlist=Nzi3MF5Yn4k&controls=0&showinfo=0&modestbranding=1"
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <!-- Dark Overlay -->
+      <div class="overlay"></div>
+
+      <!-- Content -->
+      <div class="hero-content">
+        <h1 class="title-hero">
+          Kesehatan Anda, <br />
+          Prioritas Kami
+        </h1>
+        <p>Konsultasi cepat, aman, dan nyaman bersama dokter berpengalaman.</p>
+        <div class="hero-icon">
+          <ul>
+            <li class="icon-type"><i class="bx bxs-donate-heart"></i></li>
+            <li class="icon-type"><i class="bx bxs-brain"></i></li>
+            <li class="icon-type"><i class="bx bx-plus-medical"></i></li>
+            <li class="icon-type"><i class="bx bxs-message"></i></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Clinic Section -->
+    <section
+      class="container mx-auto px-4 mt-10 py-12 md:py-20 flex flex-col lg:flex-row gap-10 md:gap-16"
+    >
+      <div
+        class="w-full lg:w-6/12 md:w-full relative rounded-xl overflow-hidden"
+      >
+        <img
+          src="./assets/img/about.jpg"
+          alt="Mother and child smiling"
+          class="w-full h-full object-cover"
+        />
+
+        <div
+          class="absolute bottom-6 left-6 right-6 bg-white bg-opacity-95 rounded-xl shadow-md py-3 px-4 flex items-center"
+          style="justify-self: start"
+        >
+          <div class="flex -space-x-3 mr-4">
+            <img
+              src="./assets/img/hero-1.jpeg"
+              alt="Community member"
+              class="w-8 h-8 rounded-full border-2 border-white"
+            />
+            <img
+              src="./assets/img/hero-3.jpg"
+              alt="Community member"
+              class="w-8 h-8 rounded-full border-2 border-white"
+            />
+            <img
+              src="./assets/img/hero-4.jpg"
+              alt="Community member"
+              class="w-8 h-8 rounded-full border-2 border-white"
+            />
+            <div
+              class="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold border-2 border-white"
+              style="background-color: var(--color-fern-green-600)"
+            >
+              10+
+            </div>
+          </div>
+          <p class="text-sm font-medium text-gray-800">
+            Join our active animal lover community
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="w-full lg:w-6/12 md:w-full flex flex-col justify-between text-center"
+      >
+        <div class="mb-5">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
+            Kesehatan untuk Semua
+          </h1>
+          <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+            Kami percaya bahwa setiap individu berhak mendapatkan akses layanan
+            kesehatan yang cepat, aman, dan terpercaya. Melalui platform
+            konsultasi digital, kami hadir untuk menghubungkan masyarakat dengan
+            tenaga medis profesional, membantu pengambilan keputusan kesehatan
+            yang lebih baik — kapan pun dan di mana pun.
+          </p>
+          <div class="flex justify-center">
+            <a
+              href="about.html"
+              class="inline-flex items-center justify-center font-medium text-lg py-4 px-8 rounded-full text-white hover:opacity-90 transition-colors"
+              style="background-color: var(--color-fern-green-400)"
+            >
+              Tentang Kami
+              <i class="bx bx-right-arrow-alt ml-2 text-xl"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Feature 1 -->
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <div class="mb-4" style="color: var(--color-fern-green-600)">
+              <i class="bx bx-heart-circle text-5xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3 text-gray-800">Visi Kami</h3>
+            <p class="text-base text-gray-600">
+              Menjadi platform kesehatan digital yang terpercaya dalam
+              memberikan akses konsultasi medis yang mudah, inklusif, dan
+              berorientasi pada kesejahteraan masyarakat.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <div class="mb-4" style="color: var(--color-fern-green-500)">
+              <i class="bx bx-target-lock text-5xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3 text-gray-800">Misi Kami</h3>
+            <p class="text-base text-gray-600">
+              Menyediakan layanan konsultasi kesehatan berbasis teknologi yang
+              aman, responsif, dan mudah digunakan, serta mendukung kolaborasi
+              antara pasien dan tenaga medis secara efektif.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Line To booking -->
+    <section class="mt-10 md:mt-24 lg:mt-40" id="why-us">
+      <div class="container-fluid">
+        <div class="container mx-auto xl:p-0 px-4">
+          <div class="text-center mb-12">
+            <div class="mb-4">
+              <h1
+                class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold special-font text-center tracking-wide"
+              >
+                Dari Kepedulian Menjadi Solusi Kesehatan
+              </h1>
+            </div>
+
+            <div>
+              <p
+                class="mt-6 text-base sm:text-lg md:text-xl font-normal text-gray-500 text-center mx-auto w-full sm:w-3/4 md:w-2/3 tracking-wide"
+              >
+                Kami menghadirkan layanan kesehatan digital yang menghubungkan
+                masyarakat dengan tenaga medis profesional secara cepat, aman,
+                dan terpercaya.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid place-items-center gap-8 relative">
+            <!-- First content block -->
+            <div
+              class="grid grid-cols-1 lg:grid-cols-2 items-center justify-between lg:gap-60 relative"
+            >
+              <div
+                class="h-[250px] xs:h-[300px] md:h-[350px] lg:h-[450px] py-2 md:py-4 lg:py-16 px-2 md:px-4 rounded-3xl order-1"
+              >
+                <img
+                  src="./assets/img/flow_image_1.jpeg"
+                  alt=""
+                  class="w-full h-full rounded-lg object-cover"
+                />
+              </div>
+              <div
+                class="grid lg:place-items-baseline md:place-items-center gap-4 text-center lg:text-left order-2"
+              >
+                <h3
+                  class="text-[var(--color-fern-green-900)] text-xl md:text-2xl lg:text-3xl font-semibold tracking-wider"
+                >
+                  Konsultasi Medis — Cepat, Aman, dan Profesional
+                </h3>
+                <p
+                  class="text-[var(--color-fern-green-800)] text-sm md:text-base font-normal pr-4 tracking-wider text-center lg:text-justify"
+                >
+                  Dapatkan konsultasi kesehatan langsung dengan dokter
+                  berpengalaman melalui platform digital tanpa perlu antre atau
+                  datang ke fasilitas kesehatan.
+                </p>
+
+                <a
+                  href="donate.html"
+                  class="lg:justify-self-start md:justify-self-center mt-4 p-3 sm:p-4 px-6 sm:px-9 bg-[var(--color-fern-green-600)] rounded-full tracking-wide text-base sm:text-lg text-white hover:bg-opacity-90 transition"
+                >
+                  Mulai Konsultasi
+                </a>
+              </div>
+              <div
+                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-7 h-7 border-[5px] border-[#5e8b5c] p-2 bg-[var(--color-fern-green-500)] rounded-full z-10 hidden lg:block"
+              ></div>
+            </div>
+
+            <!-- Second content block -->
+            <div
+              class="grid grid-cols-1 lg:grid-cols-2 items-center justify-between lg:gap-60 relative ml-0"
+            >
+              <div
+                class="grid gap-4 text-center lg:text-left order-2 lg:order-1"
+              >
+                <h3
+                  class="text-[var(--color-fern-green-900)] text-xl md:text-2xl lg:text-3xl font-semibold tracking-wider"
+                >
+                  Edukasi Kesehatan — Pencegahan Dimulai dari Informasi
+                </h3>
+                <p
+                  class="text-[var(--color-fern-green-800)] text-sm md:text-base font-normal tracking-wider text-center lg:text-justify"
+                >
+                  Akses informasi kesehatan yang akurat dan mudah dipahami untuk
+                  membantu masyarakat mengambil keputusan yang tepat demi
+                  kualitas hidup yang lebih baik.
+                </p>
+
+                <a
+                  href="fundraise.html"
+                  class="lg:justify-self-start md:justify-self-center mt-4 p-3 sm:p-4 px-6 sm:px-9 bg-[var(--color-fern-green-600)] rounded-full tracking-wide text-base sm:text-lg text-white hover:bg-opacity-90 transition"
+                >
+                  Pelajari Lebih Lanjut
+                </a>
+              </div>
+              <div
+                class="h-[250px] xs:h-[300px] md:h-[350px] lg:h-[450px] py-2 md:py-4 lg:py-16 px-2 md:px-4 rounded-3xl order-1 lg:order-2"
+              >
+                <img
+                  src="./assets/img/flow_image_2.jpeg"
+                  alt=""
+                  class="w-full h-full rounded-lg object-cover"
+                />
+              </div>
+              <div
+                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-7 h-7 border-[5px] border-[#5e8b5c] p-2 bg-[var(--color-fern-green-500)] rounded-full z-10 hidden lg:block"
+              ></div>
+            </div>
+
+            <!-- Third content block -->
+            <div
+              class="grid grid-cols-1 lg:grid-cols-2 items-center justify-between lg:gap-60 relative"
+            >
+              <div
+                class="h-[250px] xs:h-[300px] md:h-[350px] lg:h-[450px] py-2 md:py-4 lg:py-16 px-2 md:px-4 rounded-3xl order-1"
+              >
+                <img
+                  src="./assets/img/flow_image_3.jpeg"
+                  alt=""
+                  class="w-full h-full rounded-lg object-cover"
+                />
+              </div>
+              <div class="grid gap-4 text-center lg:text-left order-2">
+                <h3
+                  class="text-[var(--color-fern-green-900)] text-xl md:text-2xl lg:text-3xl font-semibold tracking-wider"
+                >
+                  Pendampingan Kesehatan — Bersama di Setiap Langkah
+                </h3>
+                <p
+                  class="text-[var(--color-fern-green-800)] text-sm pr-4 md:text-base font-normal tracking-wider text-center lg:text-justify"
+                >
+                  Kami mendampingi pengguna melalui pemantauan dan rekomendasi
+                  berkelanjutan agar proses perawatan dan pencegahan kesehatan
+                  berjalan lebih optimal.
+                </p>
+
+                <a
+                  href="volunteer.html"
+                  class="lg:justify-self-start md:justify-self-center mt-4 p-3 sm:p-4 px-6 sm:px-9 bg-[var(--color-fern-green-600)] rounded-full tracking-wide text-base sm:text-lg text-white hover:bg-opacity-90 transition"
+                >
+                  Dapatkan Pendampingan
+                </a>
+              </div>
+              <div
+                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-7 h-7 border-[5px] border-[#5e8b5c] p-2 bg-[var(--color-fern-green-500)] rounded-full z-10 hidden lg:block"
+              ></div>
+            </div>
+
+            <!-- Timeline vertical line -->
+            <div
+              class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[3px] h-full bg-gradient-to-b from-transparent via-[var(--color-fern-green-500)] to-transparent hidden lg:block"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Input symptom -->
+    <section class="contact" id="contact">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="contact__container">
+            <h3>Butuh Konsultasi Kesehatan?</h3>
+
+            <div class="contact__details">
+              <p>
+                Kami siap membantu Anda mendapatkan akses konsultasi kesehatan
+                dengan tenaga medis profesional secara cepat dan aman.
+              </p>
+              <p>
+                Hubungi kami melalui WhatsApp atau klik tombol
+                <span>Konsultasi Sekarang</span> untuk memulai.
+              </p>
+            </div>
+
+            <div class="contact__button">
+              <a
+                target="_blank"
+                href="https://wa.me/628123456789?text=Halo%20Dokter,%20saya%20ingin%20konsultasi"
+              >
+                Konsultasi Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="blog mt-3 md:mt-16 lg:mt-40" id="blog">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col items-center justify-center gap-4 mb-8 md:mb-12"
+        >
+          <h1
+            class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold special-font text-center tracking-wide"
+          >
+            Galeri & Insight Kesehatan
+          </h1>
+          <p
+            class="text-base sm:text-lg md:text-xl font-normal text-gray-500 text-center mx-auto w-full sm:w-3/4 md:w-2/3 tracking-wide"
+          >
+            Dokumentasi layanan, edukasi kesehatan, serta aktivitas tenaga medis
+            dalam mendukung kesehatan masyarakat secara berkelanjutan
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[0.5fr_1fr_0.5fr] gap-6 md:gap-8 mt-8 md:mt-12"
+        >
+          <!-- Left Column -->
+          <div class="space-y-6 md:space-y-8">
+            <!-- Article 1 -->
+            <a href="blogPage.html" class="block">
+              <div class="relative overflow-hidden rounded-2xl">
+                <img
+                  src="./assets/img/gallery_1.jpeg"
+                  alt="Blog 1"
+                  class="w-full h-48 sm:h-60 md:h-72 object-cover rounded-2xl shadow-lg transition-transform duration-300 hover:scale-110"
+                />
+                <span
+                  class="absolute top-3 left-3 bg-[#5e8b5c] text-white text-xs font-semibold px-3 py-1 rounded-full flex items-center"
+                >
+                  <i class="bx bx-star mr-1"></i> Edukasi Kesehatan
+                </span>
+              </div>
+              <p class="text-gray-500 text-sm mt-2">April 12, 2025</p>
+              <h3 class="text-base md:text-lg font-semibold mt-1 line-clamp-2">
+                Mengenal Gejala Awal Penyakit yang Sering Diabaikan
+              </h3>
+            </a>
+            <!-- Article 2 -->
+            <a href="blogPage.html" class="hidden md:block">
+              <div class="relative overflow-hidden rounded-2xl">
+                <img
+                  src="./assets/img/gallery_2.jpeg"
+                  alt="Blog 2"
+                  class="w-full h-60 md:h-72 object-cover rounded-2xl shadow-lg transition-transform duration-300 hover:scale-110"
+                />
+                <span
+                  class="absolute top-3 left-3 bg-[#5e8b5c] text-white text-xs font-semibold px-3 py-1 rounded-full flex items-center"
+                >
+                  <i class="bx bx-bullseye mr-1"></i> Tips Sehat
+                </span>
+              </div>
+              <p class="text-gray-500 text-sm mt-2">April 5, 2025</p>
+              <h3 class="text-base md:text-lg font-semibold mt-1 line-clamp-2">
+                5 Kebiasaan Sehat untuk Menjaga Daya Tahan Tubuh
+              </h3>
+            </a>
+          </div>
+
+          <!-- Center Column (Featured) -->
+          <div class="h-full lg:col-span-1 md:row-span-2">
+            <a href="blogPage.html" class="block h-full">
+              <div class="relative overflow-hidden rounded-2xl">
+                <img
+                  src="./assets/img/gallery_3.jpeg"
+                  alt="Blog 3"
+                  class="w-full h-48 sm:h-80 md:h-[500px] lg:h-[600px] object-cover rounded-2xl shadow-lg transition-transform duration-300 hover:scale-110"
+                />
+                <span
+                  class="absolute top-3 left-3 bg-[#5e8b5c] text-white text-xs font-semibold px-3 py-1 rounded-full flex items-center"
+                >
+                  <i class="bx bx-trophy mr-1"></i> Layanan Medis
+                </span>
+              </div>
+              <p class="text-gray-500 text-sm mt-2">March 28, 2025</p>
+              <h3
+                class="text-base sm:text-lg md:text-xl font-semibold mt-1 line-clamp-2"
+              >
+                Bagaimana Konsultasi Digital Membantu Ribuan Pasien
+              </h3>
+            </a>
+          </div>
+
+          <!-- Right Column -->
+          <div class="space-y-6 md:space-y-8">
+            <a href="blogPage.html" class="block">
+              <div class="relative overflow-hidden rounded-2xl">
+                <img
+                  src="./assets/img/gallery_4.jpg"
+                  alt="Blog 4"
+                  class="w-full h-48 sm:h-60 md:h-72 object-cover rounded-2xl shadow-lg transition-transform duration-300 hover:scale-110"
+                />
+                <span
+                  class="absolute top-3 left-3 bg-[#5e8b5c] text-white text-xs font-semibold px-3 py-1 rounded-full flex items-center"
+                >
+                  <i class="bx bx-camera mr-1"></i> Aktivitas Klinik
+                </span>
+              </div>
+              <p class="text-gray-500 text-sm mt-2">April 9, 2025</p>
+              <h3 class="text-base md:text-lg font-semibold mt-1 line-clamp-2">
+                Aktivitas Tenaga Medis dalam Pelayanan Konsultasi Online
+              </h3>
+            </a>
+            <a href="blogPage.html" class="hidden lg:block">
+              <div class="relative overflow-hidden rounded-2xl">
+                <img
+                  src="./assets/img/gallery_5.jpeg"
+                  alt="Blog 5"
+                  class="w-full h-72 object-cover rounded-2xl shadow-lg transition-transform duration-300 hover:scale-110"
+                />
+                <span
+                  class="absolute top-3 left-3 bg-[#5e8b5c] text-white text-xs font-semibold px-3 py-1 rounded-full flex items-center"
+                >
+                  <i class="bx bx-alarm mr-1"></i> Pencegahan
+                </span>
+              </div>
+              <p class="text-gray-500 text-sm mt-2">April 13, 2025</p>
+              <h3 class="text-lg font-semibold mt-1 line-clamp-2">
+                Pentingnya Pencegahan Dini untuk Menjaga Kesehatan
+              </h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section
+      class="mt-16 sm:mt-20 md:mt-24 lg:mt-40 px-4 sm:px-6 lg:px-8"
+      id="faq"
+    >
+      <div class="w-full">
+        <div class="container mx-auto">
+          <div
+            class="flex flex-col lg:flex-row items-start lg:items-end justify-between w-full mb-8 sm:mb-10 lg:mb-12 gap-4 sm:gap-6 lg:gap-20"
+          >
+            <div class="w-full lg:w-1/2">
+              <h3
+                class="text-[var(--color-fern-green-400)] text-lg sm:text-xl tracking-wider mb-2"
+              >
+                FAQs
+              </h3>
+              <h1 class="text-2xl sm:text-3xl font-bold">
+                Pertanyaan Seputar Layanan Kesehatan
+              </h1>
+            </div>
+
+            <div class="w-full lg:w-1/2 mt-4 lg:mt-0">
+              <p
+                class="text-gray-400 text-sm sm:text-base text-justify sm:text-left"
+              >
+                Temukan jawaban cepat mengenai layanan konsultasi kesehatan,
+                keamanan data pasien, serta visi dan misi kami dalam memberikan
+                pelayanan terbaik.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid gap-4 sm:gap-6 md:gap-8">
+            <!-- FAQ Item 1 -->
+            <div class="grid pb-4 border-b-2 border-gray-300/50 last:border-0">
+              <div class="flex justify-between items-center gap-3 sm:gap-4">
+                <h3
+                  class="text-text-color text-base sm:text-lg md:text-xl lg:text-2xl font-bold tracking-wider"
+                >
+                  Apa itu layanan kesehatan digital ini?
+                </h3>
+                <button
+                  class="faq-button bg-transparent border-[var(--color-fern-green-400)] border-2 sm:border-3 border-secondary rounded-full flex-shrink-0"
+                  data-faq="1"
+                >
+                  <i
+                    class="bx bx-plus text-primary p-1 sm:p-2 lg:p-3 text-sm sm:text-base lg:text-xl"
+                  ></i>
+                </button>
+              </div>
+
+              <div
+                class="faq__answer answer-1 max-w-full sm:max-w-[95%] overflow-y-hidden max-h-0 transition-all duration-400"
+              >
+                <p
+                  class="text-gray-400 text-sm sm:text-base tracking-wider font-normal pt-3 pr-2"
+                >
+                  Kami adalah platform layanan kesehatan digital yang
+                  menyediakan konsultasi medis secara online dengan tenaga medis
+                  profesional. Fokus kami adalah memberikan akses kesehatan yang
+                  mudah, aman, dan terpercaya bagi semua orang.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="grid pb-4 border-b-2 border-gray-300/50 last:border-0">
+              <div class="flex justify-between items-center gap-3 sm:gap-4">
+                <h3
+                  class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold tracking-wider"
+                >
+                  Bagaimana cara melakukan konsultasi dengan dokter?
+                </h3>
+                <button
+                  class="faq-button bg-transparent border-[var(--color-fern-green-400)] border-2 sm:border-3 border-secondary rounded-full flex-shrink-0"
+                  data-faq="2"
+                >
+                  <i
+                    class="bx bx-plus text-primary p-1 sm:p-2 lg:p-3 text-sm sm:text-base lg:text-xl"
+                  ></i>
+                </button>
+              </div>
+
+              <div
+                class="faq__answer answer-2 max-w-full sm:max-w-[95%] overflow-y-hidden max-h-0 transition-all duration-400"
+              >
+                <p
+                  class="text-gray-400 text-sm sm:text-base tracking-wider font-normal pt-3 pr-2"
+                >
+                  Anda dapat melakukan konsultasi dengan mendaftar melalui
+                  website kami, memilih dokter sesuai kebutuhan, lalu melakukan
+                  konsultasi secara online melalui chat atau video call sesuai
+                  jadwal yang tersedia.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="grid pb-4 border-b-2 border-gray-300/50 last:border-0">
+              <div class="flex justify-between items-center gap-3 sm:gap-4">
+                <h3
+                  class="text-text-color text-base sm:text-lg md:text-xl lg:text-2xl font-bold tracking-wider"
+                >
+                  Apakah data kesehatan saya aman?
+                </h3>
+                <button
+                  class="faq-button bg-transparent border-[var(--color-fern-green-400)] border-2 sm:border-3 border-secondary rounded-full flex-shrink-0"
+                  data-faq="3"
+                >
+                  <i
+                    class="bx bx-plus text-primary p-1 sm:p-2 lg:p-3 text-sm sm:text-base lg:text-xl"
+                  ></i>
+                </button>
+              </div>
+
+              <div
+                class="faq__answer answer-3 max-w-full sm:max-w-[95%] overflow-y-hidden max-h-0 transition-all duration-400"
+              >
+                <p
+                  class="text-gray-400 text-sm sm:text-base tracking-wider font-normal pt-3 pr-2"
+                >
+                  Ya. Kami menerapkan sistem keamanan berstandar tinggi untuk
+                  melindungi data pribadi dan rekam medis pasien. Seluruh
+                  informasi dijaga kerahasiaannya sesuai dengan kebijakan
+                  privasi dan regulasi kesehatan.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="grid pb-4 border-b-2 border-gray-300/50 last:border-0">
+              <div class="flex justify-between items-center gap-3 sm:gap-4">
+                <h3
+                  class="text-text-color text-base sm:text-lg md:text-xl lg:text-2xl font-bold tracking-wider"
+                >
+                  Apakah layanan ini dapat digunakan kapan saja?
+                </h3>
+                <button
+                  class="faq-button bg-transparent border-[var(--color-fern-green-400)] border-2 sm:border-3 border-secondary rounded-full flex-shrink-0"
+                  data-faq="4"
+                >
+                  <i
+                    class="bx bx-plus text-primary p-1 sm:p-2 lg:p-3 text-sm sm:text-base lg:text-xl"
+                  ></i>
+                </button>
+              </div>
+
+              <div
+                class="faq__answer answer-4 max-w-full sm:max-w-[95%] overflow-y-hidden max-h-0 transition-all duration-400"
+              >
+                <p
+                  class="text-gray-400 text-sm sm:text-base tracking-wider font-normal pt-3 pr-2"
+                >
+                  Layanan kami tersedia 24/7 untuk konsultasi dasar dan
+                  informasi kesehatan. Untuk konsultasi dengan dokter spesialis,
+                  jadwal dapat disesuaikan dengan ketersediaan dokter terkait.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="grid pb-4 border-b-2 border-gray-300/50 last:border-0">
+              <div class="flex justify-between items-center gap-3 sm:gap-4">
+                <h3
+                  class="text-text-color text-base sm:text-lg md:text-xl lg:text-2xl font-bold tracking-wider"
+                >
+                  Apakah layanan ini menggantikan pemeriksaan langsung ke rumah
+                  sakit?
+                </h3>
+                <button
+                  class="faq-button bg-transparent border-[var(--color-fern-green-400)] border-2 sm:border-3 border-secondary rounded-full flex-shrink-0"
+                  data-faq="5"
+                >
+                  <i
+                    class="bx bx-plus text-primary p-1 sm:p-2 lg:p-3 text-sm sm:text-base lg:text-xl"
+                  ></i>
+                </button>
+              </div>
+
+              <div
+                class="faq__answer answer-5 max-w-full sm:max-w-[95%] overflow-y-hidden max-h-0 transition-all duration-400"
+              >
+                <p
+                  class="text-gray-400 text-sm sm:text-base tracking-wider font-normal pt-3 pr-2"
+                >
+                  Layanan kesehatan digital bersifat sebagai pendamping dan
+                  solusi awal. Untuk kondisi darurat atau pemeriksaan lanjutan,
+                  kami tetap menyarankan pasien untuk mengunjungi fasilitas
+                  kesehatan secara langsung.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 6 -->
+            <div class="grid pb-4 border-b-2 border-gray-300/50 last:border-0">
+              <div class="flex justify-between items-center gap-3 sm:gap-4">
+                <h3
+                  class="text-text-color text-base sm:text-lg md:text-xl lg:text-2xl font-bold tracking-wider"
+                >
+                  Siapa saja tenaga medis yang tersedia?
+                </h3>
+                <button
+                  class="faq-button bg-transparent border-[var(--color-fern-green-400)] border-2 sm:border-3 border-secondary rounded-full flex-shrink-0"
+                  data-faq="6"
+                >
+                  <i
+                    class="bx bx-plus text-primary p-1 sm:p-2 lg:p-3 text-sm sm:text-base lg:text-xl"
+                  ></i>
+                </button>
+              </div>
+
+              <div
+                class="faq__answer answer-6 max-w-full sm:max-w-[95%] overflow-y-hidden max-h-0 transition-all duration-400"
+              >
+                <p
+                  class="text-gray-400 text-sm sm:text-base tracking-wider font-normal pt-3 pr-2"
+                >
+                  Kami bekerja sama dengan dokter umum dan tenaga medis
+                  berpengalaman yang telah terverifikasi. Setiap tenaga medis
+                  memiliki izin praktik resmi dan kompetensi sesuai bidangnya.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 7 -->
+            <div class="grid pb-4 border-b-2 border-gray-300/50 last:border-0">
+              <div class="flex justify-between items-center gap-3 sm:gap-4">
+                <h3
+                  class="text-text-color text-base sm:text-lg md:text-xl lg:text-2xl font-bold tracking-wider"
+                >
+                  Apa visi dan misi layanan kesehatan ini?
+                </h3>
+                <button
+                  class="faq-button bg-transparent border-[var(--color-fern-green-400)] border-2 sm:border-3 border-secondary rounded-full flex-shrink-0"
+                  data-faq="7"
+                >
+                  <i
+                    class="bx bx-plus text-primary p-1 sm:p-2 lg:p-3 text-sm sm:text-base lg:text-xl"
+                  ></i>
+                </button>
+              </div>
+
+              <div
+                class="faq__answer answer-7 max-w-full sm:max-w-[95%] overflow-y-hidden max-h-0 transition-all duration-400"
+              >
+                <p
+                  class="text-gray-400 text-sm sm:text-base tracking-wider font-normal pt-3 pr-2"
+                >
+                  Visi kami adalah menjadi solusi kesehatan digital terpercaya
+                  bagi masyarakat. Misi kami adalah memberikan layanan medis
+                  yang mudah diakses, aman, serta berfokus pada kenyamanan dan
+                  kesejahteraan pasien.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-100 text-gray-600 py-8 relative mt-20">
+      <div class="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8"
+        >
+          <!-- About Section -->
+          <div class="footer-section">
+            <h3 class="font-bold mb-4 tracking-wide text-base sm:text-lg">
+              Tentang Layanan Kesehatan Kami
+            </h3>
+            <p class="font-medium text-sm sm:text-base">
+              Kami adalah platform layanan kesehatan digital yang berkomitmen
+              memberikan akses konsultasi medis yang aman, mudah, dan
+              terpercaya. Fokus kami adalah membantu Anda menjaga kesehatan
+              dengan dukungan tenaga medis berpengalaman.
+            </p>
+          </div>
+
+          <!-- Navigation Section -->
+          <div class="footer-section">
+            <h3 class="font-bold mb-4 tracking-wide text-base sm:text-lg">
+              Navigasi
+            </h3>
+            <ul class="space-y-2 text-sm sm:text-base">
+              <li>
+                <a
+                  href="index.html"
+                  class="hover:underline hover:text-[var(--color-fern-green-400)] transition-all"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="hover:underline hover:text-[var(--color-fern-green-400)] transition-all"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a
+                  href="donate.html"
+                  class="hover:underline hover:text-[var(--color-fern-green-400)] transition-all"
+                  >Layanan</a
+                >
+              </li>
+              <li>
+                <a
+                  href="fundraise.html"
+                  class="hover:underline hover:text-[var(--color-fern-green-400)] transition-all"
+                  >Dokter</a
+                >
+              </li>
+              <li>
+                <a
+                  href="volunteer.html"
+                  class="hover:underline hover:text-[var(--color-fern-green-400)] transition-all"
+                  >FAQs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="blogs.html"
+                  class="hover:underline hover:text-[var(--color-fern-green-400)] transition-all"
+                  >Kontak</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Stay Connected Section -->
+          <div class="footer-section">
+            <h3 class="font-bold mb-4 tracking-wide text-base sm:text-lg">
+              Tetap Terhubung
+            </h3>
+            <p class="text-sm sm:text-base">
+              Dapatkan informasi terbaru seputar kesehatan, tips medis, dan
+              pembaruan layanan langsung ke email Anda.
+            </p>
+            <form class="mt-2">
+              <input
+                type="email"
+                placeholder="Masukkan alamat email Anda"
+                required
+                class="w-full p-2 border border-gray-300 rounded my-4 text-sm sm:text-base"
+              />
+              <button
+                type="submit"
+                class="w-full bg-gray-200 hover:bg-[var(--color-fern-green-400)] hover:text-white transition-all cursor-pointer text-gray-800 p-2 rounded text-sm sm:text-base"
+              >
+                Berlangganan
+              </button>
+            </form>
+          </div>
+
+          <!-- Follow Us Section -->
+          <div class="footer-section">
+            <h3 class="font-bold mb-4 tracking-wide text-base sm:text-lg">
+              Ikuti Kami
+            </h3>
+            <p>
+              Ikuti media sosial kami untuk mendapatkan edukasi dan informasi
+              kesehatan terpercaya.
+            </p>
+            <div class="social-icons flex space-x-4">
+              <a href="#"
+                ><i
+                  class="bx bxl-facebook text-xl sm:text-2xl hover:text-[var(--color-fern-green-400)] transition-all"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="bx bxl-twitter text-xl sm:text-2xl hover:text-[var(--color-fern-green-400)] transition-all"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="bx bxl-instagram text-xl sm:text-2xl hover:text-[var(--color-fern-green-400)] transition-all"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="bx bxl-youtube text-xl sm:text-2xl hover:text-[var(--color-fern-green-400)] transition-all"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div
+          class="mt-8 flex flex-col sm:flex-row justify-between items-center text-sm sm:text-base"
+        >
+          <p class="mb-4 sm:mb-0">
+            © 2025 Layanan Klink Stibajra Seluruh hak cipta dilindungi.
+          </p>
+          <p class="flex items-center">
+            Dibuat dengan ❤️ untuk kesehatan Anda.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
